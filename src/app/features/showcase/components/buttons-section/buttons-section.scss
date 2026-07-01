@@ -1,0 +1,16 @@
+.showcase-section {
+  margin-bottom: 32px;
+}
+
+h2 {
+  font: var(--mat-sys-title-medium);
+  margin-bottom: 12px;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}

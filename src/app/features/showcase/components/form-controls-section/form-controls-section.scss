@@ -1,0 +1,18 @@
+.showcase-section {
+  margin-bottom: 32px;
+}
+
+h2 {
+  font: var(--mat-sys-title-medium);
+  margin-bottom: 12px;
+}
+
+.field-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.field-full {
+  width: 100%;
+}

@@ -1,0 +1,25 @@
+<div class="theme-picker">
+  <div class="theme-picker__swatches">
+    @for (item of seedThemes; track item.id) {
+      <button
+        type="button"
+        class="theme-picker__swatch theme-{{ item.id }}"
+        [class.theme-picker__swatch--active]="theme.seedThemeId() === item.id"
+        [matTooltip]="item.label"
+        [attr.aria-pressed]="theme.seedThemeId() === item.id"
+        [attr.aria-label]="item.label"
+        (click)="theme.selectSeedTheme(item.id)"
+      ></button>
+    }
+  </div>
+
+  <button
+    mat-icon-button
+    type="button"
+    matTooltip="Toggle light/dark theme"
+    [attr.aria-pressed]="theme.darkMode()"
+    (click)="theme.toggleDarkMode()"
+  >
+    <mat-icon>{{ theme.darkMode() ? 'light_mode' : 'dark_mode' }}</mat-icon>
+  </button>
+</div>

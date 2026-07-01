@@ -1,0 +1,24 @@
+.theme-picker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-picker__swatches {
+  display: flex;
+  gap: 8px;
+}
+
+.theme-picker__swatch {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: var(--mat-sys-primary);
+  cursor: pointer;
+  padding: 0;
+}
+
+.theme-picker__swatch--active {
+  border-color: var(--mat-sys-on-surface);
+}

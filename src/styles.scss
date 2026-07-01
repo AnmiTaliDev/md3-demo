@@ -1,0 +1,60 @@
+// SPDX-FileCopyrightText: AnmiTaliDev <anmitalidev@nuros.org>
+
+@use '@angular/material' as mat;
+
+@mixin md3-seed-theme($primary, $tertiary) {
+  @include mat.theme(
+    (
+      color: (
+        primary: $primary,
+        tertiary: $tertiary,
+        theme-type: color-scheme,
+      ),
+      typography: Roboto,
+      density: 0,
+    )
+  );
+}
+
+html {
+  height: 100%;
+  color-scheme: light;
+  @include md3-seed-theme(mat.$azure-palette, mat.$blue-palette);
+  @include mat.system-classes();
+}
+
+.theme-azure {
+  @include md3-seed-theme(mat.$azure-palette, mat.$blue-palette);
+}
+
+.theme-violet {
+  @include md3-seed-theme(mat.$violet-palette, mat.$magenta-palette);
+}
+
+.theme-rose {
+  @include md3-seed-theme(mat.$rose-palette, mat.$orange-palette);
+}
+
+.theme-green {
+  @include md3-seed-theme(mat.$green-palette, mat.$cyan-palette);
+}
+
+.theme-orange {
+  @include md3-seed-theme(mat.$orange-palette, mat.$rose-palette);
+}
+
+.theme-magenta {
+  @include md3-seed-theme(mat.$magenta-palette, mat.$violet-palette);
+}
+
+body.dark-mode {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+  margin: 0;
+  height: 100%;
+}

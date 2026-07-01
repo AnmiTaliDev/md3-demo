@@ -1,0 +1,10 @@
+:host {
+  display: block;
+}
+
+.showcase-intro {
+  font: var(--mat-sys-body-large);
+  color: var(--mat-sys-on-surface-variant);
+  max-width: 640px;
+  margin-bottom: 32px;
+}

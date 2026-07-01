@@ -1,0 +1,24 @@
+:host {
+  display: block;
+  min-height: 100%;
+}
+
+.app-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.app-toolbar__title {
+  font: var(--mat-sys-title-large);
+}
+
+.app-toolbar__spacer {
+  flex: 1 1 auto;
+}
+
+.app-content {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}

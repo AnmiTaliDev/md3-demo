@@ -1,0 +1,19 @@
+<section class="showcase-section">
+  <h2>Chips and Toggles</h2>
+
+  <mat-chip-listbox multiple aria-label="Material You topics">
+    @for (tag of tags; track tag) {
+      <mat-chip-option>{{ tag }}</mat-chip-option>
+    }
+  </mat-chip-listbox>
+
+  <div class="controls-row">
+    <mat-slide-toggle [(ngModel)]="notificationsEnabled">Notifications</mat-slide-toggle>
+    <mat-checkbox [(ngModel)]="termsAccepted">I agree to the terms</mat-checkbox>
+  </div>
+
+  <mat-radio-group [(ngModel)]="density" aria-label="Interface density" class="controls-row">
+    <mat-radio-button value="comfortable">Comfortable</mat-radio-button>
+    <mat-radio-button value="compact">Compact</mat-radio-button>
+  </mat-radio-group>
+</section>

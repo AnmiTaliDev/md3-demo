@@ -1,0 +1,23 @@
+<section class="showcase-section">
+  <h2>Form Fields</h2>
+  <div class="field-row">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput [(ngModel)]="name" placeholder="What is your name?" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Role</mat-label>
+      <mat-select [(ngModel)]="role">
+        <mat-option value="designer">Designer</mat-option>
+        <mat-option value="developer">Developer</mat-option>
+        <mat-option value="pm">Product Manager</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <mat-form-field class="field-full">
+    <mat-label>Bio</mat-label>
+    <textarea matInput [(ngModel)]="bio" rows="2" placeholder="A few words about you"></textarea>
+  </mat-form-field>
+</section>

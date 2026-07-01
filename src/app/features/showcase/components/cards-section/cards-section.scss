@@ -1,0 +1,14 @@
+.showcase-section {
+  margin-bottom: 32px;
+}
+
+h2 {
+  font: var(--mat-sys-title-medium);
+  margin-bottom: 12px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
